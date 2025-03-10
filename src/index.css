@@ -1,0 +1,623 @@
+
+
+/* header start..... */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Urbanist";
+}
+
+p, li, a, button {
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        text-decoration: underline;
+        color: #2e86c1;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    height: 6rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    background-color: #d4e6f1;
+    width: 100%;
+}
+
+.container {
+    max-width: 100rem;
+    margin: auto;
+    height: 6rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.navbar-grid {
+    grid-template-columns: .5fr 1fr;
+    align-items: center;
+    height: 6rem;
+    padding: 0 3.2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.ham-menu {
+    display: none;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+
+/* media query.......... */
+
+@media screen and (max-width: 998px) {
+
+    .menu-web {
+        display: none;
+    }
+
+    .ham-menu {
+        display: inline-block;
+        text-align: end;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & li:first-child {
+            margin-top: 1.2rem;
+        }
+
+        & li:last-child{
+            margin-bottom: 1.2rem;
+        }
+    }
+}
+
+/* header completed.............  */
+
+
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem   ;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #2e86c1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 3px solid #2e86c1;
+    color: #2e86c1;
+    box-shadow: 5px 5px 5px #2e86c1;
+}
+
+/* ........home.hero section........... */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 3.2rem;
+    margin-bottom: 9rem !important;
+    gap: 6.4rem;
+   
+}
+
+
+
+.grid-two-cols {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 9rem !important;
+    
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.hero-img img{
+    width: 100%;
+    
+}
+
+.arrow-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.heading {
+    margin-top: 5rem;
+    padding: 12px;
+    font-size: 34px;
+    line-height: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 5px gray;
+    text-align: center;
+}
+
+.heading-xl {
+   
+    padding-bottom: 12px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 5px gray;
+}
+
+.paragraph {
+   padding: 40px 0;
+}
+
+
+@media screen and (max-width: 700px) {
+    .grid-two-cols {
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6rem;
+    }
+     
+.hero-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 300vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    top: 10rem;
+}
+}
+
+/* ............about section...............  */
+
+
+
+
+
+.container-title {
+    text-align: center;
+    padding: 0 !important;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px grey;
+}
+
+.card {
+    max-width: 35rem;
+    width: 100%;
+    border: 0;
+    margin-inline: auto;
+}
+
+
+.container-card{
+    background: linear-gradient(71deg, #080509, #1a171c, #080509 );
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 40px;
+    padding: 45px;
+    box-shadow: 5px 5px 5px 5px gray;
+
+}
+
+.container-card p {
+    font-size: 14px;
+}
+
+
+
+
+.card-title {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding-bottom: 4px;
+    font-size: 30px !important ;
+    
+}
+
+.card-description {
+    color: #fff;
+    font-size: 14px;
+}
+
+.bg-blue-box {
+   
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gradient-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 0, 3.2rem;
+}
+
+
+/* @media.............. */
+
+@media screen and (max-width: 1050px) {
+    .gradient-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 45px !important;
+        
+    }
+
+    .card {
+        max-width: 35rem;
+        width: 100%;
+        border: 0;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .gradient-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 45px !important;
+        margin-bottom: 30rem;
+        padding-bottom: 30rem;
+    }
+}
+
+
+
+
+/* .........Contact-Section...........  */
+
+.section-contact {
+    width: 40rem;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 3rem;
+    width: 100%;
+}
+
+input {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px green;
+    text-transform: capitalize;
+    border: 2px solid green;
+    outline: none;
+}
+
+input:hover {
+    border: 3px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px grey;
+    text-transform: capitalize;
+    outline: none;
+    /* letter-spacing: 1px; */
+    font-size: 16px;
+}
+
+textarea:hover {
+    border: 3px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+    
+/* ..........loader...........  */
+
+.loader { 
+    margin: auto;
+    margin-top: 20rem;
+    --s: 25px;
+    --g :5px;  
+    
+    width: calc(2*(1.353*var(--s) + var(--g)));
+    aspect-ratio: 1;
+    background:
+      linear-gradient(#ff1818 0 0) left/50% 100% no-repeat,
+      conic-gradient(from -90deg at var(--s) calc(0.353*var(--s)),
+        #fff 135deg,#666 0 270deg,#aaa 0); 
+    background-blend-mode: multiply;
+    --_m:
+      linear-gradient(to bottom right,
+         #0000 calc(0.25*var(--s)),#000 0 calc(100% - calc(0.25*var(--s)) - 1.414*var(--g)),#0000 0),
+      conic-gradient(from -90deg at right var(--g) bottom var(--g),#000 90deg,#0000 0);
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    background-size:   50% 50%;
+    -webkit-mask-size: 50% 50%;
+            mask-size: 50% 50%;
+    -webkit-mask-composite: source-in;
+            mask-composite: intersect;
+    animation: l9 1.5s infinite;
+  }
+  @keyframes l9 {
+    0%,12.5%    {background-position:0% 0%,0 0}
+    12.6%,37.5% {background-position:100% 0%,0 0}
+    37.6%,62.5% {background-position:100% 100%,0 0}
+    62.6%,87.5% {background-position:0% 100%,0 0}
+    87.6%,100%  {background-position:0% 0%,0 0}
+  }
+
+  .m-auto {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+  }
+
+/* ..........country css.................  */
+
+.countryInfo p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 25px;
+    padding-top: 10px;
+  
+}
+
+.card-title {
+    color: #fff;
+}
+
+.container-card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-four-cols {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 80px;
+}
+
+.country-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.country-card{
+    
+    width: 200px;
+    height: auto;
+    list-style: none;
+ 
+}
+
+.bg-white-box {
+    width: 220px;
+    height: 400px;
+    
+}
+
+.btn {
+ margin-top: 10px;
+ padding: 10px;
+ display: inline;
+ top: 10px;
+} 
+
+@media screen and (max-width: 1078px) {
+    .grid-four-cols{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .grid-four-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-four-cols{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* .......country card inside..........  */
+
+.infoContainer p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+    padding-top: 5px;
+  
+}
+
+.cards {
+    width: 100%;
+    max-height: 20rem;
+    margin-top: 5rem;
+}
+
+.bg-green-box {
+    display: flex;
+    height: 45rem;
+}
+
+.country-card-backBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 420px;
+    bottom: 30px;
+}
+
+
+/* ..........searchFilter..........  */
+
+
+.section-searchFilter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 0;
+    column-gap: 16rem;
+    padding-top: 0;
+}
+
+.select-section {
+    padding: 6px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px green;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid green;
+}
+.select-section:hover {
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* for resposive searchFilter..........  */
+
+@media screen and (max-width: 1078px) {
+    .section-searchFilter {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .section-searchFilter {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 70px;
+        padding-top: 0;
+        margin-bottom: 15rem;
+    }
+}
+
+
+/* ............footer........  */
+
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 140vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
